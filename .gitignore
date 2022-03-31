@@ -1,0 +1,22 @@
+.anchor
+target
+**/*.rs.bk
+
+# dependencies
+**/node_modules
+/.pnp
+.pnp.js
+
+# debug
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# deploy output
+**/*.original
+
+# misc files to ignore
+**/.DS_Store
+**/*.pem
+.vscode/
+**/*.txt

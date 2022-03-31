@@ -1,0 +1,18 @@
+[features]
+seeds = false
+[programs.localnet]
+metadata_wrapper = "FGDFtTf13pWintava7VXbpytXWDmXoxVKP2w4fafHhQQ"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "./tests/_keypair/test.json"
+
+[scripts]
+test = "ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[[test.genesis]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+program = "./tests/programs/mpl_token_metadata.so"
